@@ -20,8 +20,8 @@ main(void)
 	struct arpscan *scan;
 
 	evb = event_base_new();
-	scan = arpscan_new(evb, "any", ARPSCAN_HARSHNESS_MAX, ARPSCAN_SEND_ONCE, ARPSCAN_FINALWAIT_2SEC,
-		ARPSCAN_VERBOSE, NULL, _cb_discover, _cb_done);
+	scan = arpscan_new(evb, "any", ARPSCAN_HARSHNESS_MAX, ARPSCAN_SEND_ONCE,
+		ARPSCAN_FINALWAIT_2SEC, ARPSCAN_VERBOSE, NULL, _cb_discover, _cb_done);
 
 	event_base_dispatch(evb);
 	arpscan_free(scan);
