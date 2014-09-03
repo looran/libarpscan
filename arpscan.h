@@ -32,8 +32,6 @@
 #define ARPSCAN_VERBOSE 1
 #define ARPSCAN_NOVERBOSE 0
 
-// extern struct arpscan_iface; /* internal */
-
 struct arpscan {
 	struct event_base *evb;
 	char *iface;
