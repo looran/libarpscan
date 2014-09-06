@@ -55,4 +55,4 @@ make && sudo make install
 
 ### API
 
-See https://github.com/looran/libarpscan/blob/master/arpscan.h
+See [arpscan.h](arpscan.h)
